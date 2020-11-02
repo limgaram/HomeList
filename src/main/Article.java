@@ -1,24 +1,24 @@
 package main;
 
 public class Article {
-
 	private int id;
 	private String title;
 	private String body;
 	private String regDate;
 	private String nickname;
 	private int hit;
-
+	
 	public Article() {
-
+		
 	}
-
-	public Article(int id, String title, String body, String nickname, String regDate) {
+	
+	public Article(int id, String title, String body, String nickname, String regDate){
 		this.id = id;
 		this.title = title;
 		this.body = body;
 		this.regDate = regDate;
 		this.nickname = nickname;
+		
 	}
 
 	public int getId() {
@@ -53,14 +53,6 @@ public class Article {
 		this.regDate = regDate;
 	}
 
-	public int getHit() {
-		return hit;
-	}
-
-	public void setHit(int hit) {
-		this.hit = hit;
-	}
-
 	public String getNickname() {
 		return nickname;
 	}
@@ -69,18 +61,26 @@ public class Article {
 		this.nickname = nickname;
 	}
 
+	public int getHit() {
+		return hit;
+	}
+
+	public void setHit(int hit) {
+		this.hit = hit;
+	}
+	
 	public String getPropertiesByFlag(int flag) {
-		String str = "";
-		if (flag == 1) {
-			str = this.getTitle();
-		} else if (flag == 2) {
+		String str ="";
+		if(flag == 1) {
+			str =this.getTitle();
+		} else if(flag == 2) {
 			str = this.getBody();
-		} else if (flag == 3) {
+		} else if(flag == 3) {
 			str = this.getTitle() + this.getBody();
 		} else {
 			str = this.getNickname();
 		}
-
+		
 		return str;
 	}
 }

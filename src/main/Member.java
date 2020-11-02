@@ -1,41 +1,41 @@
 package main;
 
 public class Member {
-	private String id;
-	private String password;
+	private int id;
+	private String loginId;
+	private String loginPw;
 	private String nickname;
+	private String regDate;
 	
-	public Member(){
-		
-	}
-	
-	public Member(String id, String password, String nickname) {
-		this.id = id;
-		this.password = password;
-		this.nickname = nickname;
-	}
-
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
-
-	public String getPassword() {
-		return password;
+	public String getLoginId() {
+		return loginId;
 	}
-
-	public void setPassword(String password) {
-		this.password = password;
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
 	}
-
+	public String getLoginPw() {
+		return loginPw;
+	}
+	public void setLoginPw(String loginPw) {
+		this.loginPw = loginPw;
+	}
 	public String getNickname() {
 		return nickname;
 	}
-
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
+	public String getRegDate() {
+		return regDate;
+	}
+	public void setRegDate(String regDate) {
+		this.regDate = regDate;
+	}
+	
 }
